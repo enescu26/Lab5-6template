@@ -169,6 +169,7 @@ void UI::run()
 					int i = 0;
 					int optAdopt{ -1 };
 					bool exit = false;
+					// aici este prea multa logica pentru UI, getCurrentDog, getNextDog se implementeaza in AdoptionList
 					while (this->ctrl.getAll().getSize() != 0) {//we still have dogs left at the impound
 						i = 0;
 						while (i != this->ctrl.getAll().getSize()) {//we iter through the list till we reach the end
